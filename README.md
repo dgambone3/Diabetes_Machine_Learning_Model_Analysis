@@ -36,6 +36,103 @@ The models included in this research are:
 * Linear Regression with Optimal Polynomial
 
 ## Results
+Below are three tables summarizing the results of the best split for each model. The first table summarizes the MSE, split and calculated generalization for each model. The second summarizes all the metrics for the best split of each classification model. The final table summarizes the metrics for all regression models used in this research.
+
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/splits.png" width="500" />
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/class_splits.png" width="500" />
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/reg_splits.png" width="500" />
 
 
 
+
+* Decision Tree
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/DT_CM.png" width="500" />
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/DT_LC.png" width="500" />
+
+* Perceptron
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/PERC_CM.png" width="500" />
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/PERC_LC.png" width="500" />
+
+* Multinomial Naive Bayes
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/MNB_CM.png" width="500" />
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/MNB_LC.png" width="500" />
+
+* Logistic Regression
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/LOGREG_CM.png" width="500" />
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/LOGREG_LC.png" width="500" />
+
+* Linear Regression
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/LINGRE_LC.png" width="500" />
+
+* SVM - Linear
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/SVML_CM.png" width="500" />
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/SVML_LC.png" width="500" />
+
+* SVM - RBF
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/rbf_cm.png" width="500" />
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/SVM_RBF_LC.png" width="500" />
+
+* Gradient Boost
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/GB_CM.png" width="500" />
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/GB_LC.png" width="500" />
+
+* Muti-Layer Perceptron
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/MLP_CM.png" width="500" />
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/MLP_LC.png" width="500" />
+
+* Regularilized Linear Regression
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/REGLINREG_LC.png" width="500" />
+
+* Lasso Linear Regression
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/LASSO_LC.png" width="500" />
+
+* k-Nearest Neighbors
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/KNN_CM.png" width="500" />
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/KNN_LC.png" width="500" />
+
+* Linear Regression with Optimal Polynomial
+<img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/POLY_LC.png" width="500" />
+
+## Conclusion
+Of all the classification models, it was decided that logistic regression and complement naive Bayes are the best options based on their ability to predict class 1 and 2 regardless if it resulted in lower metric scores. Based on the learning curve and metrics, the original linear regression model is the best. Out of all models, it is concluded that logistic regression is the best overall based on its prediction of class 1 and 2, and adequate metric scores, and learning curves.
+Some intriguing discoveries during this research include that for many models the ’best’ was on a 50/50 split. It is generally known that it’s better to use more data for the training set than testing, essentially to give the model more instances of data to learn from. Thus it is concluded, that regardless of the metrics output, the user is responsible for making the best decision of certain metrics based on background knowledge and experience.
+Some challenges were faced when it was discovered that initial plans for the research were not a possibility. For example in the early stages of this research, it was thought that a grid search would be able to be used for determining the best split and fold for each model. Due to the nature of the grid search function available, this ultimately wasn’t an option. SciKit-Learn’s GridSearchCV can only create searches on hyperparemeters for one model, not different instances of multiple models. Also, it was mistaken that accuracy and MSE would be good metrics for comparison between regression and classification models. This was resolved by realizing that MSE can be used for both classification and regression problems. It was unexpected that it would be difficult to compare the two model types. Though MSE was used, it felt as if the models were still difficult to compare. It was beneficial to be able to compare the confusion matrices for classification, but was difficult to continue comparing the models when the matrices were not an option for the regression models.
+Though the ’best’ model is chosen, it is an important con- clusion that none of these models are suitable to diagnose
+diabetes in adults based on their survey answers. All of the models would incorrectly predict participants who do have diabetes, or prediabetic, as someone without diabetes. Based on this data and model results, it would be unethical to use any of these models to diagnose disease in adults. It wouldn’t even be ethical to use any of these models as any sort of preliminary screening either. Diabetes is a serious disease, and it is recommended that diagnosis is only determined by a medical professional and laboratory tests, not a machine learning model based on questionnaire answers. This research proves how important it is to evaluate multiple metrics, mod- els, and variations of the dataset to get a good idea of how the models perform. For example, if a user were to look at only the weighted metrics for the classification models, they might think the model is fine. While in reality the model is very poor based on its learning curve and confusion matrix and should not be implemented for anything outside of research and education for machine learning problems.
+
+
+
+
+
+
+
+
+
+### References 
+[1] “Diabetes Health 08-Nov-2021. Indicators [Online]. Dataset,” Available: https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators- dataset. [Accessed: 07-Mar-2023].
+
+[2] F. B. Ahmad and R. N. Anderson, “The leading causes of death in the
+US for 2020,” JAMA, vol. 325, no. 18, p. 1829, 2021.
+
+[3] “National and State Diabetes Trends,” Centers for Disease Control and Prevention, 17-May-2022. [Online]. Available:
+https://www.cdc.gov/diabetes/library/reports/reportcard/national-state-
+diabetes-trends.html. [Accessed: 07-Mar-2023].
+
+[4] “What is diabetes?,” Centers for Disease Control
+and Prevention, 07-Jul-2022. [Online]. Available: https://www.cdc.gov/diabetes/basics/diabetes.html. [Accessed: 07- Mar-2023].
+
+[5] “What is type 1 diabetes?,” Centers for Disease Con- trol and Prevention, 11-Mar-2022. [Online]. Available: https://www.cdc.gov/diabetes/basics/what-is-type-1-diabetes.html. [Accessed: 07-Mar-2023].
+
+[6] “Prediabetes - your chance to prevent type 2 diabetes,” Centers for Disease Control and Prevention, 30-Dec-2022. [Online]. Avail- able: https://www.cdc.gov/diabetes/basics/prediabetes.html. [Accessed: 07-Mar-2023].
+
+[7] “Prevalence of Both Diagnosed and Undiagnosed Diabetes,” Cen- ters for Disease Control and Prevention, 30-Sep-2022. [Online]. Available: https://www.cdc.gov/diabetes/data/statistics-report/diagnosed- undiagnosed-diabetes.html. [Accessed: 07-Mar-2023].
+
+[8] “CDC - BRFSS - Survey Data and Documentation,” Centers for Disease Control and Prevention, 30-Sep-2021. [Online]. Avail- able: https://www.cdc.gov/brfss/data/documentation/index.html. [Ac- cessed: 08-Mar-2023].
+
+[9] A. Dinh, S. Miertschin, A. Young, and S. D. Mohanty, “A data- driven approach to predicting diabetes and cardiovascular disease with Machine Learning - BMC Medical Informatics and Decision making,” BioMed Central, 06-Nov-2019. [Online]. Available: https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911- 019-0918-5. [Accessed: 19-Apr-2023].
+
+[10] “1.9. naive Bayes,” scikit. [Online]. Available: https://scikit- learn.org/stable/modules/naive bayes.html. [Accessed: 19-Apr-2023].
+
+[11] J. Han, M. Kamber, and J. Pei, Data Mining: Concepts and Techniques, 3rd ed. Burlington, MA: Elsevier, 2012.
+
+[12] “Scikit Learn API reference,” scikit. [Online]. Available: https://scikit- learn.org/stable/modules/classes.html. [Accessed: 22-Apr-2023].
