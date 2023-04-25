@@ -38,59 +38,64 @@ The models included in this research are:
 ## Results
 Below are three tables summarizing the results of the best split for each model. The first table summarizes the MSE, split and calculated generalization for each model. The second summarizes all the metrics for the best split of each classification model. The final table summarizes the metrics for all regression models used in this research.
 
+### Best Model Split
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/splits.png" width="500" />
+
+### Classification Model Metrics
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/class_splits.png" width="500" />
+
+### Regression Model Metrics
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/reg_splits.png" width="500" />
 
 
 
 
-* Decision Tree
+### Decision Tree
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/DT_CM.png" width="500" />
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/DT_LC.png" width="500" />
 
-* Perceptron
+### Perceptron
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/PERC_CM.png" width="500" />
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/PERC_LC.png" width="500" />
 
-* Multinomial Naive Bayes
+### Multinomial Naive Bayes
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/MNB_CM.png" width="500" />
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/MNB_LC.png" width="500" />
 
-* Logistic Regression
+### Logistic Regression
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/LOGREG_CM.png" width="500" />
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/LOGREG_LC.png" width="500" />
 
-* Linear Regression
+### Linear Regression
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/LINGRE_LC.png" width="500" />
 
-* SVM - Linear
+### SVM - Linear
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/SVML_CM.png" width="500" />
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/SVML_LC.png" width="500" />
 
-* SVM - RBF
+### SVM - RBF
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/rbf_cm.png" width="500" />
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/SVM_RBF_LC.png" width="500" />
 
-* Gradient Boost
+### Gradient Boost
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/GB_CM.png" width="500" />
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/GB_LC.png" width="500" />
 
-* Muti-Layer Perceptron
+### Muti-Layer Perceptron
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/MLP_CM.png" width="500" />
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/MLP_LC.png" width="500" />
 
-* Regularilized Linear Regression
+### Regularilized Linear Regression
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/REGLINREG_LC.png" width="500" />
 
-* Lasso Linear Regression
+### Lasso Linear Regression
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/LASSO_LC.png" width="500" />
 
-* k-Nearest Neighbors
+### k-Nearest Neighbors
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/KNN_CM.png" width="500" />
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/KNN_LC.png" width="500" />
 
-* Linear Regression with Optimal Polynomial
+### Linear Regression with Optimal Polynomial
 <img src="https://github.com/dgambone3/CSC6850_Machine_Learning_Project/blob/main/images/POLY_LC.png" width="500" />
 
 ## Conclusion
